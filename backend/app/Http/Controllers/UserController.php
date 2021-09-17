@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    function register() {
-        return "Hello World";
+    function register(request $request) {
+        return $request->input();
     }
 }
